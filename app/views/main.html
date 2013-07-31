@@ -1,0 +1,14 @@
+<canvas id="canvas" width="500" height="375" ng-bind='drawCircle()'></canvas>
+
+
+<div class="span5">
+  <label for="radius">radius</label><input id="radius" type="number" min="1" max="200" ng-model="radius" class="span2"/>
+  <label for="lineWidth">lineWidth</label><input id="lineWidth" type="number" min="1" max="100" ng-model="lineWidth" class="span2"/>
+  <label for="start">start</label><input id="start" value='{{circle_start}}' type="range"   min="0" max="6.2831853072" step='0.7853981634' ng-model="circle_start" class="span2"/>
+  <input id="start" value='{{circle_start}}'  ng-model="circle_start" class="span2"/>
+
+  <label for="end">end</label>
+  <input id="end" type="range" min="0" max="6.2831853072" step='0.7853981634' ng-model="circle_end" class="span2"/>
+  <input id="end" ng-model="circle_end" class="span2"/>
+
+</div>
